@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpj-O1-1fl">
+                                <rect key="frame" x="167" y="433" width="80" height="30"/>
+                                <state key="normal" title="CLICK ME 1"/>
+                                <connections>
+                                    <action selector="clickWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaF-vY-lKJ"/>
+                                    <segue destination="9Ly-yT-vFo" kind="presentation" id="GEo-lu-67a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gpj-O1-1fl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="X16-gb-7DU"/>
+                            <constraint firstItem="gpj-O1-1fl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yaE-NA-8mD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eRu-au-ebN">
+            <objects>
+                <viewController id="9Ly-yT-vFo" customClass="ViewController" customModule="TestABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ILQ-tl-atR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LWV-43-38d">
+                                <rect key="frame" x="166" y="433" width="82" height="30"/>
+                                <state key="normal" title="CLICK ME 2"/>
+                                <connections>
+                                    <action selector="clickWithSender:" destination="9Ly-yT-vFo" eventType="touchUpInside" id="xsf-F8-qwr"/>
+                                    <segue destination="spv-np-hHn" kind="presentation" id="ihb-3Q-y9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LWV-43-38d" firstAttribute="centerX" secondItem="ILQ-tl-atR" secondAttribute="centerX" id="6Uo-zb-rfk"/>
+                            <constraint firstItem="LWV-43-38d" firstAttribute="centerY" secondItem="ILQ-tl-atR" secondAttribute="centerY" id="mgo-FC-HEx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="psN-w1-1hs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXV-kf-6dE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8mA-Dp-ldR">
+            <objects>
+                <viewController id="spv-np-hHn" customClass="ViewController" customModule="TestABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rgr-Zg-f1K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLH-Kb-jbq">
+                                <rect key="frame" x="166" y="433" width="82" height="30"/>
+                                <state key="normal" title="CLICK ME 3"/>
+                                <connections>
+                                    <action selector="clickWithSender:" destination="spv-np-hHn" eventType="touchUpInside" id="1u1-h1-Zni"/>
+                                    <segue destination="Zbv-NM-4Rp" kind="showDetail" id="mU1-7L-Qjd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TLH-Kb-jbq" firstAttribute="centerX" secondItem="rgr-Zg-f1K" secondAttribute="centerX" id="S3h-hV-SrX"/>
+                            <constraint firstItem="TLH-Kb-jbq" firstAttribute="centerY" secondItem="rgr-Zg-f1K" secondAttribute="centerY" id="zvW-7D-JDy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c7J-1v-5MV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAv-dg-owV" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1112" y="902"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Bu-Hh-PtQ">
+            <objects>
+                <viewController id="Zbv-NM-4Rp" customClass="ViewController" customModule="TestABC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcK-96-xm1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="lus-3C-DhW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ZF-hz-ck3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="937"/>
+        </scene>
+    </scenes>
+</document>
